@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Todo List App</h1>
+
+  <form id="todoForm">
+    <label for="todoTask">Todo Task:</label>
+    <input type="text" id="todoTask" required>
+    <br><br>
+    <label for="todoDate">Date:</label>
+    <input type="date" id="todoDate" required>
+    <br><br>
+    <button type="submit">Add Todo</button>
+  </form>
+
+  <h2>Your Todos</h2>
+  <div id="todoList"></div>
+  <template id="todoTemplate">
+    <div class="todo-item">
+      <strong>Title:</strong> <span class="task"></span> <br>
+      <strong>Date:</strong> <span class="date"></span> <br>
+      <button class="markDone">Mark As Done</button>
+      <button class="removeTodo">Remove Todo</button>
+      <button class="editTodo">Edit Todo</button>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
